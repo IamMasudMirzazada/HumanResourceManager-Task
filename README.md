@@ -1,0 +1,2 @@
+# HumanResourceManager-Task
+task ConsoleApp
