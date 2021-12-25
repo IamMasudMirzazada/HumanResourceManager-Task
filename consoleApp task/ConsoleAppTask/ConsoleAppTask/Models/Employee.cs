@@ -13,16 +13,20 @@ namespace ConsoleAppTask.Models
         public double Salary { get; set; }
         public string DepartmentName { get; set; }
 
-        public Employee(string position, string fullname, double  salary, string departmentName)
+        public Employee(string position, string fullname, double salary, string departmentName)
         {
+            Count++;
             Fullname = fullname;
             Position = position;
             Salary = salary;
             DepartmentName = departmentName;
+            string Naming = departmentName.ToUpper().Substring(0, 2);
+            No = No + Naming + Count;
         }
+
         public override string ToString()
         {
-            return $"{Fullname} {Position} {Salary} {DepartmentName}";
+            return $"Fullname: {Fullname}\nPosition: {Position}\nSalary: {Salary}\nDepartment:{DepartmentName}\nNo:{No}";
         }
     }
 }

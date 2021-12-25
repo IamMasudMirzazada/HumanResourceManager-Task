@@ -25,14 +25,12 @@ namespace ConsoleAppTask.Services
             Array.Resize(ref _department, _department.Length + 1);
             _department[_department.Length - 1] = department;
         }
-
         public void AddEmployee(string position, string fullname, double salary, string departmentName)
         {
             Employee employee = new Employee(  position,   fullname,    salary,   departmentName);
             Array.Resize(ref _employee, _employee.Length + 1);
             _employee[_employee.Length - 1] = employee;
         }
-
         public void EditDepartaments(string Name, string newName)
         {
             //Department department = null;
@@ -59,13 +57,6 @@ namespace ConsoleAppTask.Services
             }
         }
 
-        public Department[] GetDepartments(Department[] Departments)
-        {
-            return Departments;
-
-
-        }
-
         public void EditEmploye(string No, string Fullname, double Salary, string Position)
         {
             foreach (Employee item in _employee)
@@ -79,5 +70,7 @@ namespace ConsoleAppTask.Services
                 }
             }
         }
+
+        
     }
 }

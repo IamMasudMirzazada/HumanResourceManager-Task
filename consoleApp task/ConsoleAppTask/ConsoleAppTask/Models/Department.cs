@@ -19,33 +19,20 @@ namespace ConsoleAppTask.Models
             Employees = employees;
             SalaryLimit = salaryLimit;
             Name = name;
-            WorkerLimit = workerLimit;
-          
-            if (employees.Length <= 0)
-            {
-                Console.WriteLine("Isci sayi minimum 1  ola  biler");
-                return;
-            }
-
-            if (salaryLimit < 250)
-            {
-                Console.WriteLine("Verilen maas 250-den kicik ola bilmez");
-                return;
-            }
-            if (name.Length < 2)
-            {
-                Console.WriteLine(" departament adi minimum 2 herfden ibaret olmalidir");
-                return;
-            }
-            
-
-
+            WorkerLimit = workerLimit; 
         }
-        //public override string ToString()
-        //{
-        //    return $"{Fullname} {Position} {Salary} {DepartmentName}";
-        //}
-
+        public double CalcSalaryAverage(Department department)
+        {
+            double totalSalary = 0;
+            Count++;
+            foreach (Employee item in Employees)
+            {
+                totalSalary += item.Salary;
+                Count++;
+            }
+            return totalSalary / Count;
+        }
+       
 
 
     }
