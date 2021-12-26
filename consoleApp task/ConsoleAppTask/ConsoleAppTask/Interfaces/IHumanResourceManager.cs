@@ -7,21 +7,19 @@ namespace ConsoleAppTask.Interfaces
 {
     interface IHumanResourceManager
     {
-        Employee[] Employees { get; }
-        Department[] Departments { get; }
+        public Department[] Departments { get; }
+
+        void AddDepartment(string name, int workerlimit, double salarylimit);
+        void GetDepartments();
+        void EditDepartments(string name, string newname);
+        void AddEmployee(string departmentname, string fullname, string position, double salary);
+        void EditEmployee(string departmentname, string no, string position, double salary);
+        Employee[] SearchEmployee(string search);
+        void RemoveEmployee(string no, string departmentname);
+        Department FindDepartmentByName(string name);
 
 
-      
-          void AddDepartment(Employee[] employees, double salaryLimit, string name, int workerLimit);
-          
-          void EditDepartaments(string Name, string newName);
 
-          void AddEmployee(string position, string fullname, double salary, string departmentName);
-
-          void RemoveEmployee(string No, string DepartmentName);
-
-          void EditEmploye(string No,string Fullname ,double Salary ,string Position);
-          
 
     }
 }
