@@ -7,7 +7,7 @@ namespace ConsoleAppTask.Interfaces
 {
     interface IHumanResourceManager
     {
-        public Department[] Departments { get; }
+        
 
         void AddDepartment(string name, int workerlimit, double salarylimit);
         void GetDepartments();
