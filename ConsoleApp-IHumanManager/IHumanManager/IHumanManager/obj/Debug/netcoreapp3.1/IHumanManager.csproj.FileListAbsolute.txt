@@ -1,0 +1,14 @@
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\bin\Debug\netcoreapp3.1\IHumanManager.exe
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\bin\Debug\netcoreapp3.1\IHumanManager.deps.json
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\bin\Debug\netcoreapp3.1\IHumanManager.runtimeconfig.json
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\bin\Debug\netcoreapp3.1\IHumanManager.runtimeconfig.dev.json
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\bin\Debug\netcoreapp3.1\IHumanManager.dll
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\bin\Debug\netcoreapp3.1\IHumanManager.pdb
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\obj\Debug\netcoreapp3.1\IHumanManager.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\obj\Debug\netcoreapp3.1\IHumanManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\obj\Debug\netcoreapp3.1\IHumanManager.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\obj\Debug\netcoreapp3.1\IHumanManager.AssemblyInfo.cs
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\obj\Debug\netcoreapp3.1\IHumanManager.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\obj\Debug\netcoreapp3.1\IHumanManager.dll
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\obj\Debug\netcoreapp3.1\IHumanManager.pdb
+C:\Users\HP\Desktop\ConsoleApp-IHumanManager\IHumanManager\IHumanManager\obj\Debug\netcoreapp3.1\IHumanManager.genruntimeconfig.cache
