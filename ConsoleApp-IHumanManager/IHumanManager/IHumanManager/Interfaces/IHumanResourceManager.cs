@@ -11,7 +11,7 @@ namespace IHumanManager.Interfaces
         void AddDepartment(string name, int workerLimit,double salaryLimit);
         Department[] GetDepartments(); 
         void EditDepartaments(string name,string newname);
-        void EditEmploye(string fullname, string position, double salary, string no);
+        void EditEmploye(  string position, double salary, string no);
         void AddEmployee(string fullname, string position, double salary, string departmentName);
         void RemoveEmployee(string no, string departmentName);
  

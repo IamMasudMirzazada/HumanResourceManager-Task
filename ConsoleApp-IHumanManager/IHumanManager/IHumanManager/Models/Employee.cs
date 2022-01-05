@@ -6,22 +6,9 @@ namespace IHumanManager.Models
 {
     class Employee
     {
-        private string No { get; set; }
-        public string Fullname
-        {
-            get
-            {
-                return _fullname;
-            }
-            set
-            {
-                if (!string.IsNullOrWhiteSpace(value))
-                {
-                    Console.WriteLine("Iscinin Adi ve soyadini duzgun daxil edin");
-                }
-                _fullname = value;
-            }
-        }
+        public string No { get; set; }
+        public string Fullname { get; set; }
+
         private string _fullname;
         public string Position
         {

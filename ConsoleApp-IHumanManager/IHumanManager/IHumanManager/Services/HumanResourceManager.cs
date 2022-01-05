@@ -8,20 +8,19 @@ namespace IHumanManager.Services
 {
     class HumanResourceManager : IHumanResourceManager
     {
-        public Department[] Departments => _departments;
         private Department[] _departments;
+        public Department[] Departments => _departments;
+        
         public HumanResourceManager()
         {
             _departments = new Department[0];
         }
         public void AddDepartment(string name, int workerLimit, double salaryLimit)
-        {
-            foreach (Department item in _departments)
-            {
-                Department department = new Department(name, workerLimit, salaryLimit);
+        { 
+            Department department = new Department(name, workerLimit, salaryLimit);
                 Array.Resize(ref _departments, _departments.Length + 1);
                 _departments[_departments.Length - 1] = department;
-            }
+            
         }
         public void AddEmployee(string fullname, string position, double salary, string departmentName)
         {
@@ -46,7 +45,7 @@ namespace IHumanManager.Services
                 }
             }
         }
-        public void EditEmploye(string fullname, string position, double salaryLimit, string no)
+        public void EditEmploye( string position, double salaryLimit, string no)
         {
             //Department department = null;
 
@@ -66,11 +65,18 @@ namespace IHumanManager.Services
         }
         public Department[] GetDepartments( )
         {
-            if (_departments.Length <= 0)
+
+
+            Department[] departments = new Department[0];
+            foreach (Department item in _departments)
             {
-                return null;
+                if (item != null)
+                {
+                    Array.Resize(ref departments, departments.Length + 1);
+                    departments[departments.Length - 1] = item;
+                }
             }
-            return _departments;
+            return departments;
         }
     }
 }

@@ -30,11 +30,11 @@ namespace IHumanManager.Models
             }
             set
             {
-                if (value >=1)
+                if (value >= 1)
                 {
                     _workerLimit = value;
                 }
-               
+
             }
         }
         private int _workerLimit;
@@ -50,24 +50,51 @@ namespace IHumanManager.Models
                 {
                     _salaryLimit = value;
                 }
- 
+
             }
         }
         private double _salaryLimit;
-       
-        public Employee[] Employees;
-        public Department(string name, int workerLimit,double salaryLimit)
+
+        public Employee[] Employees = { };
+        public Department(string name, int workerLimit, double salaryLimit)
         {
-            Name = Name;
+            Name = name;
             WorkerLimit = workerLimit;
             SalaryLimit = salaryLimit;
 
             Employees = new Employee[0];
         }
-        //CalcSalaryAverage()
+        public double CalcSalaryAverage()
+        {
+            double totalAmount = 0;
+            int count = 0;
+            foreach (Employee item in Employees)
+            {
+                if (item!=null)
+                {
+                    count++;
+                    totalAmount = totalAmount + item.Salary;
+                }
+            
+            }
+            if (count<=0)
+            {
+                return 0;
+            }
+            else
+            {
+                return totalAmount / count;
+            }
+            
+
+	}
         public override string ToString()
         {
-            return base.ToString();
+            return $"Name: {Name} \nWorker Limit: {WorkerLimit} \nSalary Limit:{SalaryLimit}";
         }
     }
+            
+            
+            
+ 
 }
